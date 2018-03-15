@@ -4,7 +4,7 @@ $('#img1').click(function () {
 });
 
 
-$('body').on('click','a[href*=#]', function(e) {
+$('body').on('click','a[href*="#"]', function(e) {
     e.preventDefault();
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
 });
